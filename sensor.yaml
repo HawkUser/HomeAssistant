@@ -1,0 +1,11 @@
+  - platform: template
+    sensors:
+     ping_defaultgw_avg:
+      value_template: "{{ state_attr('binary_sensor.Internet_Connection_DefaultGW', 'round_trip_time_avg') }}"
+      unit_of_measurement: ms
+     ping_googledns_avg:
+      value_template: "{{ state_attr('binary_sensor.Internet_Connection_GoogleDNS', 'round_trip_time_avg') }}"
+      unit_of_measurement: ms
+     ping_netvisiondns_avg:
+      value_template: "{{ state_attr('binary_sensor.Internet_Connection_NetvisionDNS', 'round_trip_time_avg') }}"
+      unit_of_measurement: ms

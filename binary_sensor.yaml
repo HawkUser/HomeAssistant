@@ -1,0 +1,15 @@
+- platform: ping
+  host: 8.8.8.8
+  count: 2
+  scan_interval: 60
+  name: Internet_Connection_GoogleDNS
+- platform: ping
+  host: 192.168.1.1
+  count: 2
+  scan_interval: 60
+  name: Internet_Connection_DefaultGW
+- platform: ping
+  host: 194.90.1.5
+  count: 2
+  scan_interval: 60
+  name: Internet_Connection_NetvisionDNS
